@@ -1,0 +1,146 @@
+/* 
+ * Jajanan Gen-Z Lumer - Styling Kustom & Efek Visual Premium 
+ * (@donkus_lumerr26)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-choco: #2d1810;
+    --primary-warm: #422114;
+    --accent-amber: #d97706;
+    --accent-gold: #f59e0b;
+    --bg-cream: #faf7f2;
+    --bg-surface: #ffffff;
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-cream);
+    color: #332722;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-heading);
+}
+
+.font-serif-luxury {
+    font-family: var(--font-serif);
+}
+
+/* Glassmorphism Header */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.6);
+}
+
+/* Hero Gradient & Texture */
+.hero-gradient {
+    background: radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(217, 119, 6, 0.1) 0%, transparent 40%),
+                linear-gradient(135deg, #fff9f3 0%, #faf3eb 100%);
+}
+
+/* Melting Drips Divider Decor */
+.melt-wave-top {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.melt-wave-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 38px;
+}
+
+/* Product Card Glow & Hover */
+.product-card {
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px -10px rgba(66, 33, 20, 0.12), 0 10px 15px -5px rgba(217, 119, 6, 0.08);
+}
+
+/* Floating Pulsing Glow for Order Buttons */
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.45);
+    }
+    50% {
+        box-shadow: 0 0 0 12px rgba(217, 119, 6, 0);
+    }
+}
+
+.cta-pulse {
+    animation: pulseGlow 2.5s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1ede7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d4c5b9;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b5a396;
+}
+
+/* Custom Animation Ticker */
+#live-ticker-text {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Sticky Bottom Mobile Bar */
+@media (max-width: 768px) {
+    .mobile-bottom-bar {
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    }
+}
+
+/* Delivery Area Alert Styling */
+.delivery-area-highlight {
+    color: #d9534f !important;
+    font-weight: 700 !important;
+}
+
+/* Trust Badge Privasi WhatsApp Modal Checkout */
+.trust-badge-privacy {
+    font-size: 11px;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.trust-badge-privacy strong {
+    font-weight: 700;
+    color: #495057;
+}
+
+.trust-badge-privacy i {
+    color: #6c757d;
+    margin-right: 4px;
+}
+
+
